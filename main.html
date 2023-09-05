@@ -12,14 +12,19 @@
 		<label for="name">Name</label>
 		<br><input type ="text" id="name" required placeholder="Name"></br>
 		<label for="email">Email</label>
-	<br><input type ="email" id="email" required placeholder="Email">
+	<br><input type ="email" id="email"  required placeholder="Email">
 	<br><label for="gender_m">male</label>
-		<br><input type ="radio" id="gender_m" required ></br>
+		<br><input type ="radio" id="gender_m" name="Gender" required ></br>
 	<label for="gender_f">female</label>
-		<br><input type ="radio" id="gender_f" required ></br>
-		<label for="cars">Car Brands</label>
-		<br><input type ="select" id="cars" required ></br>
-		<label for="age">Age</label>
+		<br><input type ="radio" id="gender_f" name="Gender" required ></br>
+		 <label for="cars">Car Brands</label>
+  <br>  <select id="cars" required>
+        <!-- Add your options here -->
+	<option>Mahindra</option>  
+	<option>Mercedes</option>  
+	<option>Tata</option>  
+		 </select>
+	<br>	<label for="age">Age</label>
 		<br><input type ="number" id="age" required placeholder="Age"></br>
 	<label for="dob">DOB</label>
 		<br><input type ="date" id="dob" required ></br>
@@ -29,6 +34,8 @@
 		<br><input type ="password" id="password" required placeholder="Password"></br>
 	<label for="tos">I agree to the TOS</label>
 		<br><input type ="checkbox" id="tos" required></br>
+		 <button type="submit">Submit</button>
+</form>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
